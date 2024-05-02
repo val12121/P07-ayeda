@@ -8,6 +8,7 @@ class ArbolAVL : public ABB<Key>
 private:
   nodoAVL<Key> *raiz;
   bool BuscarNodo(nodoAVL<Key> *&nodo, const Key &clave_dada);
+  bool option_traza = false;
 
 public:
   ArbolAVL() : ABB<Key>(), raiz{NULL} {}
